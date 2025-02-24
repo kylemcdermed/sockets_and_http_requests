@@ -18,7 +18,7 @@ for site in ip_list:
     end_time = time.time()
 
     if res.returncode == 0:
-        elapsed_time = start_time - end_time
+        elapsed_time = end_time - start_time
         print(f'The site {site} had a response time of {elapsed_time:.4f} seconds')
     else:
         print(f'Failed to reach site {site} (IP: {ip})')
